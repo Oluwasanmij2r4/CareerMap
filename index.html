@@ -12,10 +12,10 @@
   />
     
 </head>
-<body>
-  <div>
-    <nav class="bg-blue-50 shadow">
-        <div class="max-w-7xl mx-auto py-5 px-6 flex justify-between items-center">
+<body class="overflow-x-hidden">
+  <div class="w-screen">
+    <nav class="bg-white shadow px-8">
+        <div class="py-5 flex justify-between items-center">
 
             <div>
                 <h1 class="font-sans text-4xl font-extrabold">
@@ -28,7 +28,7 @@
                 <li><a href="#" class="hover:text-blue-600">Career Explorer</a></li>
                 <li><a href="#" class="hover:text-blue-600">Skill Builder</a></li>
                 <li><a href="#" class="hover:text-blue-600">Contact</a></li>
-                <li><a href="#" class="bg-blue-600 hover:bg-blue-800 p-4 text-white rounded-xl">Get Started</a></li>
+                <li><a href="#" class="bg-gray-900 font-medium py-2 px-4 text-white rounded-xl border border-blue-600 hover:bg-white hover:text-gray-900">Get Started</a></li>
             </ul>
 
             <!-- Mobile Menu (hamburger + dropdown) -->
@@ -41,16 +41,91 @@
                </svg>
                 </summary>
 
-                <ul class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md text-base font-medium text-gray-600 z-50 pb-2">
+                <ul class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md text-base font-medium text-gray-600 z-50 pb-4">
                     <li><a href="/index.html" class="block px-4 py-2 text-blue-600">Home</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Career Explorer</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Skill Builder</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Contact</a></li>
-                    <li><a href="#" class="block px-4 py-2 bg-blue-600 hover:bg-blue-800 text-white rounded-md mt-1 mx-2">Get Started</a></li>
+                    <li><a href="#" class="block py-2 px-4 bg-gray-900 font-medium text-white rounded-md mt-1 mx-2 border border-blue-600 hover:bg-white hover:text-gray-900">Get Started</a></li>
                   </ul>
              </details>
+        </div>    
+    </nav> 
+    
+    <section class="px-8 pt-8 bg-blue-50">
+      <div class="text-center lg:text-left lg:flex lg:justify-between lg:items-center">
+        <div class="pb-8">
+          <div>
+            <h1 class="text-3xl lg:text-4xl font-extrabold text-blue-800 wrap-break-word pb-4 leading-[1.25]">Find Your Path to a Fulfilling Career.</h1>
+            <p class="text-base font-normal text-gray-600 pb-4 leading-[1.5]">Explore career options, build essential skills, and plan your future with confidence.</p>
+          </div>
+
+          <div class="flex gap-4 items-center justify-center lg:justify-start">
+            <a href="#" class="bg-gray-900 py-2 px-4 text-white font-medium rounded-md border border-blue-600 hover:bg-white hover:text-gray-900">Explore</a>
+
+            <a href="#" class="bg-blue-600 py-2 px-4 font-medium text-white rounded-md border border-gray-900 hover:bg-white hover:text-blue-600">Build Skills</a>
+          </div>
         </div>
-    </nav>      
+
+        <div class="flex justify-center">
+          <img src="/assets/hapy.png" alt="college_student" class="max-w-xs h-100 object-contain">
+          <img src="/assets/smiling.png" alt="college_student" class="max-w-xs h-100 object-cover object-center relative right-12">
+        </div>
+        </div>
+    </section>
+
+    <section class="px-8 py-8">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-900 pt-8 pb-4">
+          How GuideMap Helps You
+        </h1>
+
+        <p class="text-gray-600 w-1/2 mx-auto">
+          We provide comprehensive resources to guide you toward a successful career path, whether you're just starting out or looking to make a change.
+        </p>
+      </div>
+
+      <div class="w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 py-12">
+
+        <div class="flex flex-col items-center gap-y-2">
+          <i class="fa-solid fa-life-ring p-4 bg-blue-300 text-blue-800 text-2xl rounded-full"></i>
+          <h2 class="text-xl font-medium">Career Explorer</h2>
+          <p class="text-center text-gray-600">
+            Discover various career paths that match your interests, skills, and education level.
+          </p>
+          <div class="flex gap-1 items-center text-blue-800">
+            <span>Explore careers</span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col items-center gap-y-2">
+          <i class="fa-solid fa-book-open p-4 bg-green-300 text-green-800 text-2xl rounded-full"></i>
+          <h2 class="text-xl font-medium">Skill Builder</h2>
+          <p class="text-center text-gray-600">
+            Access free resources to develop the skills needed for your desired career path.
+          </p>
+          <div class="flex gap-1 items-center text-green-800">
+            <span>Build Skills</span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col items-center gap-y-2">
+          <i class="fa-solid fa-message p-4 bg-orange-300 text-orange-800 text-2xl rounded-full"></i>
+          <h2 class="text-xl font-medium">Personal Support</h2>
+          <p class="text-center text-gray-600">
+            Get personalized guidance and answers to your career-related questions.
+          </p>
+          <div class="flex gap-1 items-center text-orange-800">
+            <span>Contact Us</span>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
