@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="icon" href="/assets/explore.svg">
+</head>
+<body>
+    <section class="min-h-screen w-full bg-blue-50">
+        <div class="w-full">
+            <nav class="bg-white shadow px-10 sticky top-0 z-100">
+                <div class="py-5 flex justify-between items-center">
+        
+                    <div>
+                        <h1 class="font-sans text-4xl font-extrabold">
+                            <span class = "text-orange-400">Career</span><span class = "text-blue-600">Path</span>
+                        </h1>
+                    </div>
+        
+                    <ul class="hidden md:flex gap-4 text-base font-medium text-gray-600">
+                        <li><a href="/index.html" class="hover:text-blue-600" >Home</a></li>
+                        <li><a href="./pages/career.html"   class="text-blue-600">Career Explorer</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Skill Builder</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+                        <li><a href="#" class="bg-gray-900 font-medium py-2 px-4 text-white rounded-xl border border-transparent hover:border-blue-600 hover:bg-white hover:text-gray-900">Get Started</a></li>
+                    </ul>
+        
+                    <!-- Mobile Menu (hamburger + dropdown) -->
+                     <details class="md:hidden relative">
+                        <summary class="cursor-pointer list-none">
+                            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                               d="M4 6h16M4 12h16M4 18h16" />
+                       </svg>
+                        </summary>
+        
+                        <ul class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md text-base font-medium text-gray-600 z-50 pb-4">
+                            <li><a href="/index.html" class="block px-4 py-2 text-blue-600">Home</a></li>
+                            <li><a href="./pages/career.html" class="block px-4 py-2 hover:text-blue-600">Career Explorer</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Skill Builder</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Contact</a></li>
+                            <li><a href="#" class="block py-2 px-4 bg-gray-900 font-medium text-white rounded-md mt-1 mx-2 border border-transparent hover:border-blue-600 hover:bg-white hover:text-gray-900">Get Started</a></li>
+                          </ul>
+                     </details>
+                </div>    
+            </nav> 
+        </div>
+
+        <div class="px-10 pt-12">
+            <div>
+                <h1 class="text-2xl lg:text-4xl font-extrabold text-gray-900 wrap-break-word pt-8 leading-[1.25]">Career Explorer</h1>
+                <p class="w-4/5 text-base font-normal text-gray-600 py-4 leading-[1.5]">Discover different career paths, required skills, and growth potential to help you make informed decisions about your future.</p>
+
+                <div class="flex items-center text-sm gap-2 border border-gray-400 p-2 rounded-sm mb-8 w-4/5 bg-white font-medium outline-transparent outline-2 hover:outline-blue-600">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for careers, skills, or keywords..." class="w-full outline-none">
+                </div>
+            </div>
+
+            <div class="w-full flex justify-between bg-white px-4 py-2 rounded-lg">
+
+                <div class="flex gap-2 items-center text-1xl">
+                    <i class="fa-solid fa-filter text-blue-500"></i>
+                    <p class="text-gray-900 font-medium">Filter by course</p>
+                </div>
+                
+
+                <div class="flex gap-4 items-center">
+                    <input type="radio" name="filter" id="all" class="peer/all hidden" checked>
+                    <label for="all" class="cursor-pointer px-4 py-1 border border-transparent rounded peer-checked/all:bg-blue-500 peer-checked/all:text-white hover:bg-blue-50 hover:text-gray-900">All</label>
+                  
+                    <input type="radio" name="filter" id="tech" class="peer/tech hidden">
+                    <label for="tech" class="cursor-pointer px-4 py-1 border border-transparent rounded peer-checked/tech:bg-blue-50 peer-checked/tech:text-gray-900 hover:bg-blue-500 hover:text-white">Tech</label>
+                  
+                    <input type="radio" name="filter" id="health" class="peer/health hidden">
+                    <label for="health" class="cursor-pointer px-4 py-1 border border-transparent rounded peer-checked/health:bg-blue-50 peer-checked/health:text-gray-900  hover:bg-blue-500 hover:text-white">Health</label>
+                  
+                    <input type="radio" name="filter" id="design" class="peer/design hidden">
+                    <label for="design" class="cursor-pointer px-4 py-2 border border-transparent rounded peer-checked/design:bg-blue-50 peer-checked/design:text-gray-900  hover:bg-blue-500 hover:text-white">Design</label>
+                  </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
