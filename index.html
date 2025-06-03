@@ -20,17 +20,17 @@
         <div class="py-5 flex justify-between items-center">
 
             <div>
-                <h1 class="font-sans text-4xl font-extrabold">
+                <a href="/index.html" class="font-sans text-4xl font-extrabold">
                     <span class = "text-orange-400">Career</span><span class = "text-blue-600">Path</span>
-                </h1>
+                </a>
             </div>
 
             <ul class="hidden md:flex gap-4 text-base font-medium text-gray-600">
                 <li><a href="/index.html" class="text-blue-600">Home</a></li>
                 <li><a href="./pages/career.html" class="hover:text-blue-600">Career Explorer</a></li>
-                <li><a href="#" class="hover:text-blue-600">Skill Builder</a></li>
-                <li><a href="#" class="hover:text-blue-600">Contact</a></li>
-                <li><a href="#" class="bg-gray-900 font-medium py-2 px-4 text-white rounded-xl border border-transparent hover:border-blue-600 hover:bg-white hover:text-gray-900">Get Started</a></li>
+                <li><a href="./pages/skill.html" class="hover:text-blue-600">Skill Builder</a></li>
+                <li><a href="/pages/contact.html" class="hover:text-blue-600">Contact</a></li>
+                <li><a href="#" class="bg-blue-950 font-medium py-2 px-4 text-white rounded-xl border border-transparent hover:border-blue-600 hover:bg-white hover:text-blue-950">Get Started</a></li>
             </ul>
 
             <!-- Mobile Menu (hamburger + dropdown) -->
@@ -46,7 +46,7 @@
                 <ul class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md text-base font-medium text-gray-600 z-50 pb-4">
                     <li><a href="/index.html" class="block px-4 py-2 text-blue-600">Home</a></li>
                     <li><a href="./pages/career.html" class="block px-4 py-2 hover:text-blue-600">Career Explorer</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Skill Builder</a></li>
+                    <li><a href="./pages/skill.html" class="block px-4 py-2 hover:text-blue-600">Skill Builder</a></li>
                     <li><a href="#" class="block px-4 py-2 hover:text-blue-600">Contact</a></li>
                     <li><a href="#" class="block py-2 px-4 bg-gray-900 font-medium text-white rounded-md mt-1 mx-2 border border-transparent hover:border-blue-600 hover:bg-white hover:text-gray-900">Get Started</a></li>
                   </ul>
@@ -63,9 +63,9 @@
           </div>
 
           <div class="flex gap-4 items-center justify-center lg:justify-start">
-            <a href="#" class="bg-gray-900 py-2 px-4 text-white font-medium rounded-md border border-transparent hover:border-blue-600 hover:bg-white hover:text-gray-900">Explore</a>
+            <a href="./pages/career.html" class="bg-blue-950 py-2 px-4 text-white font-medium rounded-md border border-transparent hover:border-blue-600 hover:bg-white hover:text-blue-900">Explore</a>
 
-            <a href="#" class="bg-blue-600 py-2 px-4 font-medium text-white rounded-md border border-transparent hover:border-gray-900 hover:bg-white hover:text-blue-600">Build Skills</a>
+            <a href="./pages/skill.html" class="bg-blue-600 py-2 px-4 font-medium text-white rounded-md border border-transparent hover:border-blue-950 hover:bg-white hover:text-blue-600">Build Skills</a>
           </div>
         </div>
 
@@ -96,7 +96,7 @@
             Discover various career paths that match your interests, skills, and education level.
           </p>
           <div class="flex gap-1 items-center text-blue-800 hover:text-blue-900 hover:font-medium">
-            <a href="#">Explore careers</a>
+            <a href="./pages/career.html">Explore careers</a>
             <span><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </div>
@@ -109,7 +109,7 @@
             Access free resources to develop the skills needed for your desired career path.
           </p>
           <div class="flex gap-1 items-center text-green-800 hover:text-green-900 hover:font-medium">
-            <a href="#">Build Skills</a>
+            <a href="./pages/skill.html">Build Skills</a>
             <span><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </div>
@@ -129,23 +129,24 @@
       </div>
     </section>
 
-    <section class="px-10 py-12 bg-gray-50 grid lg:grid-cols-4 md:grid-cols-2 justify-center gap-8">
-      <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow">
+    <section class=" py-12 px-10 flex flex-col bg-gray-50 md:grid lg:grid-cols-4 md:grid-cols-2 justify-center gap-8 w-full">
+      
+      <div class="cursor-pointer hover:scale-105 text-center bg-white p-6 rounded-xl shadow">
         <span class="font-bold text-4xl pb-2 text-blue-800">800+</span>
         <p class="text-gray-600">Career Paths</p>
       </div>
 
-      <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow">
+      <div class="cursor-pointer hover:scale-105 flex flex-col items-center bg-white p-6 rounded-xl shadow">
         <span class="font-bold text-4xl pb-2 text-green-800">1200+</span>
         <p class="text-gray-600">Learning Resources</p>
       </div>
 
-      <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow">
+      <div class="cursor-pointer hover:scale-105 flex flex-col items-center bg-white p-6 rounded-xl shadow">
         <span class="font-bold text-4xl pb-2 text-orange-800">50K+</span>
         <p class="text-gray-600">Students Guided</p>
       </div>
 
-      <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow">
+      <div class="cursor-pointer hover:scale-105 flex flex-col items-center bg-white p-6 rounded-xl shadow">
         <span class="font-bold text-4xl pb-2 text-purple-800">92%</span>
         <p class="text-gray-600">Success Rates</p>
       </div>
@@ -214,7 +215,8 @@
       </div>
 
       <div class="grid md:grid-cols-3 justify-center gap-8">
-        <div class="p-4 bg-white shadow-2xl rounded-xl">
+       
+        <div class="p-4 cursor-pointer hover:scale-y-102 bg-white shadow-2xl rounded-xl">
           <div class="flex gap-2 items-center pb-4">
             <div>
               <img src="https://img.freepik.com/free-photo/casual-young-african-man-smiling-isolated-white_93675-128895.jpg?uid=R86908395&ga=GA1.1.929214349.1741594769&semt=ais_items_boosted&w=740" alt="profile picture" class="w-17 h-18 object-cover rounded-full">
@@ -231,7 +233,7 @@
         </div>
 
 
-        <div class="p-4 bg-white shadow-2xl rounded-xl">
+        <div class="p-4 cursor-pointer hover:scale-y-102 bg-white shadow-2xl rounded-xl">
           <div class="flex gap-2 items-center pb-4">
             <div>
               <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-129412.jpg?uid=R86908395&ga=GA1.1.929214349.1741594769&semt=ais_items_boosted&w=740" class="w-17 h-18 object-cover rounded-full">
@@ -248,7 +250,7 @@
         </div>
 
 
-        <div class="p-4 bg-white shadow-2xl rounded-xl">
+        <div class="p-4 cursor-pointer hover:scale-y-102 bg-white shadow-2xl rounded-xl">
           <div class="flex gap-2 items-center pb-4">
             <div>
               <img src="https://img.freepik.com/free-photo/handsome-adult-male-posing_23-2148729713.jpg?uid=R86908395&ga=GA1.1.929214349.1741594769&semt=ais_items_boosted&w=740" alt="profile picture" class="w-17 h-18 object-cover rounded-full">
@@ -276,8 +278,8 @@
       </p>
 
       <div class="pt-4 flex justify-center gap-4">
-        <a href="#" class="bg-gray-900 py-2 px-4 text-white font-medium rounded-md border border-transparent hover:border-blue-600 hover:bg-white hover:text-gray-900">Explore Careers</a>
-        <a href="#" class="bg-blue-600 py-2 px-4 font-medium text-white rounded-md border border-transparent hover:border-gray-900 hover:bg-white hover:text-blue-600">Build Skills</a>
+        <a href="/pages/career.html" class="bg-blue-950 py-2 px-4 text-white font-medium rounded-md border border-transparent hover:border-blue-600 hover:bg-white hover:text-blue-950">Explore Careers</a>
+        <a href="./pages/skill.html" class="bg-blue-600 py-2 px-4 font-medium text-white rounded-md border border-transparent hover:border-blue-950 hover:bg-white hover:text-blue-600">Build Skills</a>
       </div>
     </section>
 
@@ -306,9 +308,9 @@
 
       <div>
         <ul class="flex flex-col gap-2">
-          <li><a href="#" class="hover:text-gray-200">Home</a></li>
-          <li><a href="#" class="hover:text-gray-200">Career Explorer</a></li>
-          <li><a href="#" class="hover:text-gray-200">Skill Builder</a></li>
+          <li><a href="./index.html" class="hover:text-gray-200">Home</a></li>
+          <li><a href="./pages/career.html" class="hover:text-gray-200">Career Explorer</a></li>
+          <li><a href="./pages/skill.html" class="hover:text-gray-200">Skill Builder</a></li>
           <li><a href="#" class="hover:text-gray-200">Contact Us</a></li>
           <li><a href="#" class="hover:text-gray-200">FAQ</a></li>
           <li><a href="#" class="hover:text-gray-200">Terms of Service</a></li>

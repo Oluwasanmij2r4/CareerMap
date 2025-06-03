@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- Entire Filter Group -->
+<div class="w-full flex flex-col gap-4 bg-white px-4 py-2 rounded-lg mb-8">
+
+    <!-- Top: Filter Label -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-2 items-center text-xl">
+        <i class="fa-solid fa-filter text-blue-500"></i>
+        <p class="text-gray-900 font-medium">Filter by course</p>
+      </div>
+    </div>
+  
+    <!-- Radio Group -->
+    <div class="flex gap-2 flex-wrap">
+      <!-- All -->
+      <div class="peer/all-wrapper">
+        <input type="radio" name="filter" id="all" class="peer hidden" checked />
+        <label for="all" class="cursor-pointer px-4 py-1 rounded peer-checked:bg-blue-500 peer-checked:text-white hover:bg-blue-50 hover:text-gray-900">All</label>
+  
+        <div class="hidden peer-checked:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+          <!-- All Cards -->
+          <!-- You can duplicate or combine course cards here as desired -->
+        </div>
+      </div>
+  
+      <!-- Engineering -->
+      <div class="peer/tech-wrapper flex flex-col">
+        
+          <input type="radio" name="filter" id="tech" class="peer hidden" />
+          <label for="tech" class="cursor-pointer px-4 py-1 rounded peer-checked:bg-blue-500 peer-checked:text-white hover:bg-blue-50 hover:text-gray-900">Engineering</label>
+        
+  
+        <div class="hidden peer-checked:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+            <div class="bg-blue-500 p-4 rounded-xl grid gap-4">
+                <span class="flex items-center gap-2">
+                  <i class="fa-solid fa-laptop text-blue-800 text-sm bg-blue-300 p-2 rounded-full"></i>
+                  <h2 class="font-semibold text-xl">Computer Engineering</h2>
+                </span>
+                <p class="text-xs text-gray-500 leading-[1.5]">
+                  Design and develop computer systems, hardware components, and
+                  software solutions that optimize performance, enhance
+                  functionality, and support diverse technological applications.
+                </p>
+                <table class="w-full text-sm">
+                  <tr>
+                    <th class="text-left text-gray-400 font-normal pb-1">Avg. Salary:</th>
+                    <td class="text-right text-gray-700 font-normal pb-1">$50,000/year</td>
+                  </tr>
+                  <tr>
+                    <th class="text-left text-gray-400 font-normal pb-1">Education:</th>
+                    <td class="text-right text-gray-700 font-normal pb-1">Bachelor's Degree</td>
+                  </tr>
+                  <tr>
+                    <th class="text-left text-gray-400 font-normal pb-1">Growth:</th>
+                    <td class="text-right text-green-500 font-normal pb-1">+13% (2020-2030)</td>
+                  </tr>
+                </table>
+                <span>
+                    <p class="font-medium text-sm pb-2">Key Skills:</p>
+                    <ul class="flex text-xs flex-wrap gap-x-2 gap-y-2">
+                        <li class="bg-blue-50 text-gray-900 p-1">Digital Logic Design</li>
+                        <li class="bg-blue-50 text-gray-900 p-1">Programming Languages</li>
+                        <li class="bg-blue-50 text-gray-900 p-1">Embedded Systems</li>
+                        <li class="bg-blue-50 text-gray-900 p-1">Computer Architecture</li>
+                    </ul>
+                </span>
+                
+                <span class="flex justify-self-end gap-1 items-center text-blue-800 hover:text-blue-900 hover:font-medium">
+                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+                </span> 
+                          </div>
+        </div>
+      </div>
+  
+      <!-- Medicine -->
+      <div class="peer/health-wrapper">
+        <input type="radio" name="filter" id="health" class="peer hidden" />
+        <label for="health" class="cursor-pointer px-4 py-1 rounded peer-checked:bg-blue-500 peer-checked:text-white hover:bg-blue-50 hover:text-gray-900">Medicine</label>
+  
+        <div class="hidden peer-checked:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+          <!-- Medicine Cards -->
+        </div>
+      </div>
+  
+      <!-- Repeat for agric, law, edu... -->
+    </div>
+  </div>
+  
+</body>
+</html>
