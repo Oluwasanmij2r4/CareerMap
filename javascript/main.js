@@ -1,8 +1,10 @@
-const career = [
+const careers = [
   {
     title: "Computer Engineering",
     skills: ["Signal Processing", "Control Systems", "Power Generation"],
     difficulty: 6,
+    category: "Engineering",
+    experience: "3 years",
   },
 
   {
@@ -18,6 +20,8 @@ const career = [
       "Time management",
     ],
     difficulty: 9,
+    category: "Health",
+    experience: "4 years",
   },
 
   {
@@ -30,6 +34,8 @@ const career = [
       "Ethical judgement",
     ],
     difficulty: 8,
+    category: "Arts",
+    experience: "5 years",
   },
 
   {
@@ -41,6 +47,8 @@ const career = [
       "Fluid Mechanics",
     ],
     difficulty: 6,
+    category: "Engineering",
+    experience: "3 years",
   },
 
   {
@@ -56,35 +64,59 @@ const career = [
       "Innovative thinking",
     ],
     difficulty: 5,
+    category: "Arts",
+    experience: "2 years",
   },
 ];
 
 
 const careerFilter = () => {
-    const userInput = prompt("Enter a max difficult level");
-    const difficulty = Number(userInput);
+    const userInput = prompt("Enter a max experience level");
+    const experience = Number(userInput);
    
-
-    if(isNaN(difficulty)) {
+    if(isNaN(experience) || experience <= 0) {
         alert("Please enter a valid number")
         return
     }
 
-    console.log("Max difficulty level is:", difficulty);
+    console.log("Max experience level is:", experience);
     console.log(" ");
 
-    for(let i = 0; i < career.length; i++){
-        const profession = career[i];
-        const professionLevel = profession.difficulty;
-        const professionSkill = profession.skills.length;
 
-        if(professionLevel < difficulty){
-            console.log(profession);
-            console.log(`Number of skills required: ${professionSkill}`);
+    const groupedCareers = {};
 
-            console.log(" ");
+    for(const career of careers){
+      const experienceLevel = Number(career.experience[0]);
+      
+
+      if(experience >= experienceLevel){
+        console.log(career);
+        console.log(" ");
+
+        const cat = career.category;
+
+        if (!groupedCareers[cat]) {
+          groupedCareers[cat] = [];
         }
+
+        groupedCareers[cat].push(career);
+      }
     }
-}
+
+        for (const category in groupedCareers){
+          const careersInCategory = groupedCareers[category];
+          console.log(
+            `${category} careers above (${careersInCategory.length}):`
+          );
+
+          for(const career of careersInCategory){
+            console.log(`- ${career.title} (Experience: ${career.experience})`);
+          }
+          console.log(" ");
+        }         
+      };
+
+
+
 
 careerFilter();
